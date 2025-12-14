@@ -25,6 +25,11 @@ multivers-main/
 │   ├── ablation_scifact20_posweight.sh   # Stage 2: Fine-tuning with class weight
 │   ├── eval_ablation_scifact20.sh        # Evaluation script
 │   └── eval_multivers.py             # Evaluation metrics computation
+├── retrieval_script/
+│   ├── analyze_retrieval_stats.py    # Print the retrieval coverage of the retrieved docs
+│   ├── idea_retrieval.py             # Simulate a ideal retreiver without any loss of gold docs
+│   ├── rerank_base_50.py             # Rerank the given 50 docs to further lessen the docs retrieved
+│   └── retrieval_rerank_from_corpus.py  # Retrieval from the whole corpus candidates
 └── data/
     └── pico_features/                # Pre-computed PICO features
 ```
